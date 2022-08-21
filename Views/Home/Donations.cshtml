@@ -1,0 +1,37 @@
+﻿@model List<u21528498_HW4.Models.Donations>
+@{
+    ViewBag.Title = "Donations";
+}
+
+<img src="~/logo.png" alt="health foundation" style="width: 50px; text-align:center" id="home" />
+<script type="text/javascript">
+    $('#home').click(function () {
+        document.location = '@Url.Action("Index", "Home")';
+    })
+</script>
+
+<h2>The amount of sanitary pads and canned food we received from kind South Africans</h2>
+<br />
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>Products</th>
+            <th>Amount</th>
+            <th>Province</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var donation in Model)
+        {
+            <tr>
+                <td>@donation.Product</td>
+                <td>@donation.Amount</td>
+                <td>@donation.Province</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+

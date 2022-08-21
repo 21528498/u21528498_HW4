@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Donate";
+}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+
+<img src="~/logo.png" alt="health foundation" style="width: 50px; text-align:center" id="home" />
+<script type="text/javascript">
+    $('#home').click(function () {
+        document.location = '@Url.Action("Index", "Home")';
+    })
+</script>
+
+<h2>Donate to improve our nation</h2>
+<br />
+<h5>
+    Bank: Nedbank <br />
+    Account: The Health Foundation of South Africa <br />
+    Account Number: 1021 539 813 <br />
+    Branch code: 12 32 09 <br />
+    Branch Name: Business Southern Peninsula <br />
+    Type of Account: Current Account <br />
+    Swift address: NEDSZAJJ <br />
+</h5>
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img class="card-img-right" src="~/zapper.jpg" alt="zapper" style="width: 400px" />
+        </div>
+        <div class="col-md-6">
+            <img class="card-img-right" src="~/snapscan.jpg" alt="snapscan" style="width: 400px" />
+        </div>
+    </div>
+</div>
+<br />
+<br />
+<small>
+    You are able to track where your donation is going and how the money is put to use. All eligible
+    donations will be acknowledged by means of a Section 18a receipt to enable donors to claim tax rebates
+</small>
+
+
